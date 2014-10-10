@@ -1,0 +1,30 @@
+html
+    head
+        title MOO Twitter Minicards
+        link href="/stylesheets/style.css" rel="stylesheet" type="text/css"
+h1 = user.screen_name
+h3 = user.description
+
+p Select the # you want to appear on your minicards
+
+form
+    - for i in 0..20
+        p
+            label
+                = "##{hash_tags[i][0]}: #{hash_tags[i][1]}"
+            input.hashtag_inputs type="checkbox" value=hash_tags[i][0]
+
+/ - tweets.each do |tweet|
+/     p
+/         = tweet.text
+
+#minicardFront
+    img#profile src=profile
+    #info
+        h3 = "@#{user.screen_name}"
+        small = user.description
+#minicardBack
+    h1#hashtag
+    
+script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+script src="/javascripts/index.js"

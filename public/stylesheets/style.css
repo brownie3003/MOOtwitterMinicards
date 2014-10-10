@@ -1,0 +1,37 @@
+#minicardFront {
+    position: fixed;
+    right: 100px;
+    top: 100px;
+    width: 400px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+#minicardBack {
+    position: fixed;
+    right: 100px;
+    top: 250px;
+    width: 400px;
+    height: 120px;
+    border: 1px solid black;
+}
+
+#profile {
+    height: 120px;
+    float: left;
+    display: inline-block
+}
+
+#info {
+    float: right;
+    width: 270px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+#hashtag {
+    font-size: 40px;
+    margin-top: 37px;
+    text-align: center;
+}
